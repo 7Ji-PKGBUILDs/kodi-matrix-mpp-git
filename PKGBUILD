@@ -43,7 +43,7 @@ makedepends=(
   'libinput' 'flatbuffers'
   'librga-multi' 'mpp-git'
 )
-options=(!lto strip)
+options=(!lto strip !ccache)
 
 [[ -n "$_clangbuild" ]] && makedepends+=('clang' 'lld' 'llvm')
 
@@ -215,7 +215,7 @@ package_kodi-matrix-mpp-git() {
     'mesa' 'python-pillow' 'python-pycryptodomex' 'python-simplejson'
     'shairplay' 'smbclient' 'sqlite' 'taglib' 'tinyxml'
     'libxrandr' 'libxkbcommon' 'waylandpp' 'libinput'
-    'pcre' 'mpp-git' 'flatbuffers'
+    'pcre' 'flatbuffers' 'librga-multi' 'mpp-git'
   )
   [[ -n "$_clangbuild" ]] && depends+=('glu')
 

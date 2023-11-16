@@ -71,6 +71,7 @@ pkgbase = kodi-matrix-mpp-git
 	noextract = libudfread-1.1.0.tar.gz
 	options = !lto
 	options = strip
+	options = !ccache
 	source = git+https://github.com/xbmc/xbmc.git#branch=Matrix
 	source = git+https://github.com/xbmc/inputstream.ffmpegdirect.git#branch=Matrix
 	source = git+https://github.com/xbmc/repo-binary-addons.git#branch=Matrix
@@ -141,8 +142,9 @@ pkgname = kodi-matrix-mpp-git
 	depends = waylandpp
 	depends = libinput
 	depends = pcre
-	depends = mpp-git
 	depends = flatbuffers
+	depends = librga-multi
+	depends = mpp-git
 	optdepends = afpfs-ng: Apple shares support
 	optdepends = bluez: Blutooth support
 	optdepends = python-pybluez: Bluetooth support
