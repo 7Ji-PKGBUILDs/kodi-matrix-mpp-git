@@ -41,7 +41,7 @@ makedepends=(
   'wayland-protocols' 'waylandpp' 'libxkbcommon'
   # gbm
   'libinput' 'flatbuffers'
-  'librga-multi' 'mpp-git'
+  'librga-multi' 'mpp'
 )
 options=(!lto strip !ccache)
 
